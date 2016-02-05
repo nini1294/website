@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: #14c5ce; /* Old browsers */
+  background: -moz-linear-gradient(top,  #14c5ce 0%, #8ad4d1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #14c5ce 0%,#8ad4d1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #14c5ce 0%,#8ad4d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14c5ce', endColorstr='#8ad4d8',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Droid Serif', serif;
+}
+
+#container {
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#name {
+  margin-top: 6%;
+  color: rgb(15, 47, 82);
+  font-size: 48px;
+}
+
+#info {
+  font-size: 18px;
+}
+
+#links {
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+/*Individual links*/
+#link {
+  color: #331475;
+  font-size: 20px;
+}

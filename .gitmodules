@@ -1,0 +1,3 @@
+[submodule "myneta_api"]
+	path = myneta_api
+	url = https://github.com/nini1294/myneta_api

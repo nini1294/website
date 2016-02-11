@@ -17,5 +17,8 @@
         <% end %>
       </div>
     </div>
+    <div id='debug'>
+      <% if ENV['RACK_ENV'] == 'development' %>DEVELOPMENT<% end %>
+    </div>
   </body>
 </html>

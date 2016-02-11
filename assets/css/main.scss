@@ -1,0 +1,70 @@
+$color-main: #0900b5;
+$color-secondary: #009ab5;
+$text-color: #12c7a1;
+
+@mixin backgroung-gradient($color1, $color2) {
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(top,  $color1 40%, $color2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  $color1 40%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  $color1 40%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color1}', endColorstr='#{$color2}',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  @include backgroung-gradient($color-main, $color-secondary);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  // overflow: hidden;
+  width: 100%;
+  min-height: 99vh;
+  font-family: 'Droid Serif', serif;
+}
+
+#container {
+  display: flex; // set the context
+  flex: 1; // flex an equal space for the entire container sire.
+  align-items: center; // make my junk stretch the complete height sir mixalot.
+  flex-direction: column; // stuff can't be a row. gotstah be a column.
+}
+
+// Debug information
+#debug {
+  display: flex; // set the context
+  flex: 1; // flex an equal amt of space yo!
+  align-items: flex-end; // make that shit sit on the bottom dawg.
+  justify-content: center; // center the text horizontally suckah. the poor man's text-align: center
+  font-size: 20px;
+  font-family: monospace;
+  color: $text-color;
+}
+
+#name {
+  margin-top: 6%;
+  color: $text-color;
+  font-size: 48px;
+}
+
+#info {
+  font-size: 18px;
+  color: $text-color;
+}
+
+#links {
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+// Individual links
+#link {
+  color: $text-color;
+  font-size: 20px;
+}

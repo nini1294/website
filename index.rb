@@ -1,5 +1,6 @@
 require 'roda'
 require 'dotenv'
+require_relative 'myneta_api/my_neta.rb'
 Dotenv.load
 
 # Main landing page class
@@ -19,6 +20,10 @@ class Index < Roda
         Github: 'https://github.com/nini1294'}
       @name = 'Nishant Shah'
       render('index')
+    end
+
+    r.on '/my_neta' do
+      r.run MyNeta
     end
   end
 end

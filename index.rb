@@ -1,6 +1,6 @@
 require 'roda'
 require 'dotenv'
-require_relative 'myneta_api/my_neta.rb'
+load './myneta_api/my_neta.rb'
 Dotenv.load
 
 # Main landing page class
@@ -15,14 +15,14 @@ class Index < Roda
     r.assets
 
     r.root do
-      puts ENV['RACK_ENV']
       @links = { Resume: '#', LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
         Github: 'https://github.com/nini1294'}
+      @projects = { MyNeta_API: '/my_neta/' }
       @name = 'Nishant Shah'
       render('index')
     end
 
-    r.on '/my_neta' do
+    r.on 'my_neta' do
       r.run MyNeta
     end
   end

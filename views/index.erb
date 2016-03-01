@@ -11,9 +11,14 @@
       <h2 id='name'><%= @name %></h2>
       <p id='info'>I'm a third year Computer Engineering major at the Georgia Institute
                    of technology</p>
-      <div id='links'>
+      <div id='links' class='links'>
         <% @links.each do |name, link| %>
           <a id='link' href="<%= link %>"><%= name %></a>
+        <% end %>
+      </div>
+      <div id='projects' class='links'>
+        <% @projects.each do |name, link| %>
+          <a id='link' href="<%= link %>"><%= name.to_s.gsub('_', ' ') %></a>
         <% end %>
       </div>
     </div>

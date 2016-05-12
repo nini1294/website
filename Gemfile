@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'roda'
 gem 'rake'
 gem 'dotenv'
+gem 'unicorn'
 
 # Templates
 gem 'tilt'

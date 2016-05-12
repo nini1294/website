@@ -10,6 +10,15 @@ gem 'tilt'
 # CSS and JS
 gem 'sass'
 
-group :development do
-  gem 'rack-unreloader'
+# Dev only
+gem 'rack-unreloader'
+
+# MyNeta
+gem 'nokogiri'
+gem 'sequel'
+gem 'pg'
+
+group :test do
+  gem 'rack-test'
+  gem 'rspec-given'
 end

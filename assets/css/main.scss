@@ -1,6 +1,6 @@
-$color-main: #0900b5;
-$color-secondary: #009ab5;
-$text-color: #12c7a1;
+$color-main: #47b8e0;
+$color-secondary: #34314c;
+$text-color: #87314e;
 
 @mixin backgroung-gradient($color1, $color2) {
   background: $color1; /* Old browsers */
@@ -47,6 +47,7 @@ body {
 
 #name {
   margin-top: 6%;
+  margin-bottom: 0;
   color: $text-color;
   font-size: 48px;
 }
@@ -56,7 +57,8 @@ body {
   color: $text-color;
 }
 
-#links {
+.links {
+  margin: 10px;
   padding-left: 20%;
   display: flex;
   flex-direction: column;
@@ -66,5 +68,5 @@ body {
 // Individual links
 #link {
   color: $text-color;
-  font-size: 20px;
+  font-size: 28px;
 }

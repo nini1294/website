@@ -39,9 +39,6 @@ Gemfile.lock
 .sass-cache
 .sass-cache/*
 
-# Public
-public
-
 # ignore .env
 .env
 

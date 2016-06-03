@@ -15,7 +15,7 @@ class Index < Roda
     r.assets
 
     r.root do
-      @links = { Resume: '#', LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
+      @links = { Resume: '/Resume_NishantShah.pdf', LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
         Github: 'https://github.com/nini1294'}
       @projects = { MyNeta_API: '/my_neta/' }
       @name = 'Nishant Shah'

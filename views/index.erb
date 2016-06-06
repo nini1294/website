@@ -8,10 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
     <%= assets(:css) %>
-    <%= assets(:js) %>
   </head>
   <body>
     <div id='container'>
+      <video id="bg_video" loop muted autoplay></video></video>
       <h2 id='name'><%= @name %></h2>
       <p id='info'>I'm a third year Computer Engineering major at the Georgia Institute of technology</p>
       <div id='links' class='links'>
@@ -28,5 +28,6 @@
     <div id='debug'>
       <% if ENV['RACK_ENV'] == 'development' %>DEVELOPMENT<% end %>
     </div>
+    <%= assets(:js) %>
   </body>
 </html>

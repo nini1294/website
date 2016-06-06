@@ -7,8 +7,8 @@ Dotenv.load
 class Index < Roda
 
   plugin :render
-  plugin :static, ['/css', '/js']
-  plugin :assets, css:'main.scss', js:'main.js'
+  plugin :static, ['/assets/images/'], root: '.'
+  plugin :assets, css: 'main.scss', js: ['bideo.js', 'main.js']
   compile_assets unless ENV['RACK_ENV'] == 'development'
 
   route do |r|

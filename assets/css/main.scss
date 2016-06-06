@@ -34,6 +34,11 @@ body {
   flex-direction: column; // stuff can't be a row. gotstah be a column.
 }
 
+#bg_video {
+  z-index: -1;
+  position: fixed;
+}
+
 // Debug information
 #debug {
   display: flex; // set the context

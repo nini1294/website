@@ -16,9 +16,10 @@ class Index < Roda
 
     r.root do
       @links = { Resume: '/Resume_NishantShah.pdf', LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
-        Github: 'https://github.com/nini1294'}
+        GitHub: 'https://github.com/nini1294'}
       @projects = { MyNeta_API: '/my_neta/' }
       @name = 'Nishant Shah'
+      @info = 'I\'m a fourth year Computer Engineering major at the Georgia Institute of technology'
       render('index')
     end
 

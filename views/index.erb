@@ -4,16 +4,16 @@
   <head>
     <meta charset="utf-8">
     <title>Hello World</title>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
     <%= assets(:css) %>
   </head>
   <body>
     <div id='container'>
-      <video id="bg_video" loop muted autoplay></video></video>
+      <video id="bg-video" loop muted autoplay></video>
+      <img src='/assets/images/bg-1-small.png' id="video-cover"></img>
       <h2 id='name'><%= @name %></h2>
-      <p id='info'>I'm a third year Computer Engineering major at the Georgia Institute of technology</p>
+      <p id='info'><%= @info %></p>
       <div id='links' class='links'>
         <% @links.each do |name, link| %>
           <a id='link' href="<%= link %>"><%= name %></a>
@@ -24,9 +24,9 @@
           <a id='link' href="<%= link %>"><%= name.to_s.gsub('_', ' ') %></a>
         <% end %>
       </div>
-    </div>
-    <div id='debug'>
+      <div id='debug'>
       <% if ENV['RACK_ENV'] == 'development' %>DEVELOPMENT<% end %>
+      </div>
     </div>
     <%= assets(:js) %>
   </body>

@@ -42,4 +42,7 @@ Gemfile.lock
 # ignore .env
 .env
 
+# Ignore generaed assets
+/public/assets
+
 .DS_Store

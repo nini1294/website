@@ -19,7 +19,7 @@ class Index < Roda
         GitHub: 'https://github.com/nini1294'}
       @projects = { MyNeta_API: '/my_neta/' }
       @name = 'Nishant Shah'
-      @info = 'I\'m a fourth year Computer Engineering major at the Georgia Institute of technology'
+      @info = 'I\'m a fourth year Computer Engineering major at the Georgia Institute of Technology'
       render('index')
     end
 

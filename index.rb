@@ -15,12 +15,13 @@ class Index < Roda
     r.assets
 
     r.root do
+      @title = "Hello World!"
       @links = { Resume: '/Resume_NishantShah.pdf', LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
         GitHub: 'https://github.com/nini1294'}
-      @projects = { MyNeta_API: '/my_neta/' }
+      @projects = { MyNeta_API: '/my_neta/', CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project' }
       @name = 'Nishant Shah'
-      @info = 'I\'m a fourth year Computer Engineering major at the Georgia Institute of Technology'
-      render('index')
+      @info = 'I\'m a fourth year Computer Engineering major at the Georgia Institute of Technology.<br>'
+      render 'index'
     end
 
     r.on 'my_neta' do

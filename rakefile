@@ -1,0 +1,10 @@
+import './myneta_api/rakefile'
+
+task :run, [:port] do |t, args|
+  desc 'Run the server'
+  puts 'Starting server'
+  args.with_defaults(port: 3000)
+  `rackup config.ru -p #{args.port}`
+end
+
+task default: [:run]

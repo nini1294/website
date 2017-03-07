@@ -45,4 +45,6 @@ Gemfile.lock
 # Ignore generaed assets
 /public/assets
 
+.well-known
+
 .DS_Store

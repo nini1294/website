@@ -7,4 +7,9 @@ task :run, [:port] do |t, args|
   `rackup config.ru -p #{args.port}`
 end
 
+task :unicorn do |t|	
+	desc 'Start the unicorn server'
+	`unicorn -c ./conf/unicorn.rb -D`
+end
+
 task default: [:run]

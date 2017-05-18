@@ -9,7 +9,7 @@ class Index < Roda
   plugin :render
   plugin :static, ['/assets/images/'], root: '.'
   plugin :static, ['/.well-known/acme-challenge/'], root: '.'
-  plugin :assets, css: 'main.scss', js: ['bideo.js', 'main.js', 'googleanalytics.js']
+  plugin :assets, css: 'main.scss', js: ['bideo.min.js', 'main.js', 'googleanalytics.js']
   compile_assets unless ENV['RACK_ENV'] == 'development'
 
   route do |r|

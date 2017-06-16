@@ -21,7 +21,7 @@ class Index < Roda
         GitHub: 'https://github.com/nini1294'}
       @projects = { MyNeta_API: '/my_neta/', CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project' }
       @name = 'Nishant Shah'
-      @info = 'I\'m a fourth year Computer Engineering major at the Georgia Institute of Technology.<br>'
+      @info = 'I am a software developer at Oracle in Pleasanton, California.'
       render 'index'
     end
 

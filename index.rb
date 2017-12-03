@@ -15,13 +15,23 @@ class Index < Roda
   route do |r|
     r.assets
 
+    @name = 'Nishant Shah'
+    @info = 'I am a software developer at Oracle in Pleasanton, California.'
+
     r.root do
+      @partial = 'info'
       @title = "Hello World!"
       @links = { Resume: '/Resume_NishantShah.pdf', LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
         GitHub: 'https://github.com/nini1294'}
-      @projects = { MyNeta_API: '/my_neta/', CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project' }
-      @name = 'Nishant Shah'
-      @info = 'I am a software developer at Oracle in Pleasanton, California.'
+      @projects = { MyNeta_API: '/my_neta/', CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project', ESGT_Smart_Mirror: '/smartmirror' }
+      render 'index'
+    end
+
+    r.on 'smartmirror' do
+      @partial = 'smartmirror'
+      @title = 'ESGT Smart Mirror Project'
+      @info = 'A hardware and software framework for any glass based IoT device, with a smart mirror implemented as a demonstration.'
+      @links = { Project_Website: 'https://github.com/ESGTProject', GitHub: 'https://github.com/ESGTProject' }
       render 'index'
     end
 

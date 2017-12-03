@@ -1,0 +1,10 @@
+<div id='links' class='links'>
+  <% @links.each do |name, link| %>
+    <a id='link' href="<%= link %>"><%= name %></a>
+  <% end %>
+</div>
+<div id='projects' class='links'>
+  <% @projects.each do |name, link| %>
+    <a id='link' href="<%= link %>"><%= name.to_s.gsub('_', ' ') %></a>
+  <% end %>
+</div>

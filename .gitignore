@@ -48,3 +48,5 @@ Gemfile.lock
 .well-known
 
 .DS_Store
+
+.vscode/

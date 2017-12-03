@@ -1,0 +1,5 @@
+<div id='links' class='links'>
+  <% @links.each do |name, link| %>
+    <a id='link' href="<%= link %>"><%= name.to_s.gsub('_', ' ') %></a>
+  <% end %>
+</div>

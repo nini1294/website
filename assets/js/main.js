@@ -1,10 +1,8 @@
-$(document).ready(function() {
-  if (window.location.pathname == '/') {
-    initBV();
-    $('#video-cover').ready(function() {
-      $('#video-cover').fadeIn(1000);
-    })
-  }
+$(document).ready(function() {  
+  initBV();
+  $('#video-cover').ready(function() {
+    $('#video-cover').fadeIn(1000);
+  })
 });
 
 function initBV() {

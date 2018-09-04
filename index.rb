@@ -22,6 +22,7 @@ class Index < Roda
       @projects = { MyNeta_API: '/my_neta/', CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project' }
       @name = 'Nishant Shah'
       @info = 'I am a software developer at Oracle in Pleasanton, California.'
+			@partial = 'info'
       render 'index'
     end
 

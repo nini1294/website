@@ -7,8 +7,18 @@ task :run, [:port] do |t, args|
   `rackup config.ru -p #{args.port}`
 end
 
-task :unicorn do |t|	
+task :unicornd do |t|
 	desc 'Start the unicorn server'
+end
+
+task :killserver do |r|
+	desc 'Kill the running unicorn server'
+	puts 'Killing pid: ' + File.read('./tmp/pids/unicorn.pid')
+	`kill -9 $(cat ./tmp/pids/unicorn.pid)`
+end
+
+task :unicornd do |t|	
+	desc 'Start the unicorn server as a daemon'
 	`unicorn -c ./conf/unicorn.rb -D`
 end
 

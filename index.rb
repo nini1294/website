@@ -19,7 +19,7 @@ class Index < Roda
       @title = "Hello World!"
       @links = { Resume: '/Resume_NishantShah.pdf', LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
         GitHub: 'https://github.com/nini1294'}
-      @projects = { MyNeta_API: '/my_neta/', CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project'
+      @projects = { MyNeta_API: '/my_neta/', CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project',
 										Smartmirror: '/smartmirror' }
       @name = 'Nishant Shah'
       @info = 'I am a software developer at Oracle in Pleasanton, California.'

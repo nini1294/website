@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Ruby version
+ruby '2.5.3'
+
 gem 'roda'
 gem 'rake'
 gem 'dotenv'

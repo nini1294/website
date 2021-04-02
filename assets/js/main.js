@@ -1,23 +1,20 @@
-$(document).ready(function() {  
+document.addEventListener("DOMContentLoaded", function() {  
   initBV();
-  $('#video-cover').ready(function() {
-    $('#video-cover').fadeIn(1000);
-  })
 });
 
 function initBV() {
   var bv = new Bideo();
 
   bv.init({
-    videoEl: $('#bg-video').get(0),
+    videoEl: document.querySelector('#bg-video'),
 
-    container: $('#container').get(0),
+    container: document.querySelector('#container'),
 
     resize: true,
 
     src: [
       {
-        src: '../assets/images/bg-2.mp4',
+        src: '../assets/images/bg-1.mp4',
         type: 'video/mp4'
       }
     ],

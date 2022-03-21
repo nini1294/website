@@ -47,7 +47,7 @@ class Index < Roda
 			render 'index'
 		end
 
-    r.on 'procedural' do
+    r.on 'procgen' do
       @name = 'Procedural Generation'
       @title = 'Procedural Generation'
       render 'procedural_generation'

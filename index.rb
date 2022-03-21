@@ -17,12 +17,18 @@ class Index < Roda
 
     r.root do
       @title = "Hello World!"
-      @links = { Resume: '/Resume_NishantShah.pdf', LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
-        GitHub: 'https://github.com/nini1294'}
-      @projects = { MyNeta_API: '/my_neta/', CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project',
-										Smartmirror: '/smartmirror' }
+      @external_links = {
+        Resume: '/Resume_NishantShah.pdf',
+        LinkedIn: 'https://www.linkedin.com/in/nishantshah94',
+        GitHub: 'https://github.com/nini1294'
+      }
+      @projects = {
+        MyNeta_API: '/my_neta/',
+        CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project',
+				Smartmirror: '/smartmirror'
+      }
       @name = 'Nishant Shah'
-      @info = 'I am a software developer at Oracle in Pleasanton, California.'
+      @info = 'I\'m a software developer at Oracle in Pleasanton, California.'
 			@partial = 'info'
       render 'index'
     end
@@ -31,8 +37,11 @@ class Index < Roda
 			@name = 'ESGT Smart Mirror Project'
 			@info = ''
 			@partial = 'smartmirror'
-			@links = { Project_Website: 'https://esgtproject.github.io/', Project_GitHub: 'https://github.com/ESGTProject/',
-									Frontend_Code: 'https://github.com/ESGTProject/frontend' }
+			@links = {
+        Project_Website: 'https://esgtproject.github.io/',
+        Project_GitHub: 'https://github.com/ESGTProject/',
+				Frontend_Code: 'https://github.com/ESGTProject/frontend'
+      }
 			render 'index'
 		end
 

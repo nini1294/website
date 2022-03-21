@@ -22,4 +22,13 @@ task :unicornd do |t|
 	`unicorn -c ./conf/unicorn.rb -D`
 end
 
+task :restart do |t|
+  desc 'Restart unicorn server'
+  pid = `cat ./tmp/pids/unicorn.pid`
+  puts "Killing process with pid #{pid}"
+  `kill -9 #{pid}`
+  puts 'Restarting server'
+  `unicorn -c ./conf/unicorn.rb -D`
+end
+
 task default: [:run]

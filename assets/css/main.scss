@@ -1,8 +1,8 @@
 $main-font: 'Roboto Condensed', sans-serif;
 
-$color-name: #77a5f2;
+$color-name: #6194ec;
 $color-secondary: #c6d7ff;
-$color-links: #ACF0F2;
+$color-links: #8af1f4;
 $color-hover: red;
 $text-color: #A4D4B4;
 
@@ -31,6 +31,17 @@ $break-large: 1200px;
   }
   @media only screen and (min-width: $break-large) {
     font-size: 6vw;
+  }
+}
+
+@mixin name-font-smaller {
+  color: $color-name;
+  font-size: 5vw;
+  @media only screen and (min-width: $break-small) {
+    font-size: 8vw;
+  }
+  @media only screen and (min-width: $break-large) {
+    font-size: 5vw;
   }
 }
 
@@ -120,6 +131,14 @@ body {
   margin-bottom: 0;
   align-self: flex-start;
   @include name-font;
+}
+
+#name-small {
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-bottom: 0;
+  align-self: flex-start;
+  @include name-font-smaller;
 }
 
 #info {

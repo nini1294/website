@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#22405C">
+    <title><%= @title %></title>
+    <%= assets(:css) %>
+  </head>
+  <body>
+    <div id='container'>
+      <h3 id='name-small'><%= @name %></h3>
+      <p id='info'><%= @info %></p>
+      <div id='debug'>
+      </div>
+    </div>
+    <%= assets(:js) %>
+  </body>
+</html>

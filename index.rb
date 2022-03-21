@@ -23,6 +23,7 @@ class Index < Roda
         GitHub: 'https://github.com/nini1294'
       }
       @projects = {
+        Procedural_Generation: '/procedural',
         MyNeta_API: '/my_neta/',
         CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project',
 				Smartmirror: '/smartmirror'
@@ -36,6 +37,7 @@ class Index < Roda
 		r.on 'smartmirror' do
 			@name = 'ESGT Smart Mirror Project'
 			@info = ''
+      @title = "Smart Mirror"
 			@partial = 'smartmirror'
 			@links = {
         Project_Website: 'https://esgtproject.github.io/',
@@ -44,6 +46,12 @@ class Index < Roda
       }
 			render 'index'
 		end
+
+    r.on 'procedural' do
+      @name = 'Procedural Generation'
+      @title = 'Procedural Generation'
+      render 'procedural_generation'
+    end
 
     r.on 'my_neta' do
       r.run MyNeta

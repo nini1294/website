@@ -8,12 +8,22 @@
     <%= assets(:css) %>
   </head>
   <body>
-    <div id='container'>
+    <div id='pg-container'>
       <h3 id='name-small'><%= @name %></h3>
       <p id='info'><%= @info %></p>
-      <div id='debug'>
+      <div id="category-container">
+        <% @links.each do |key, category| %>
+          <div>
+            <h2 id="category-title"><%= category[:title] %></h2>
+            <div id="image-grid">
+              <% category[:items].each do |item| %>
+                <img id="img" src="/assets/images/procedural_generation<%= item %>">
+              <% end %>
+            </div>
+          </div>
+        <% end %>
       </div>
+      <div id='debug'></div>
     </div>
-    <%= assets(:js) %>
   </body>
 </html>

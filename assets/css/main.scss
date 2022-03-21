@@ -92,6 +92,16 @@ body {
   flex-direction: column;
 }
 
+#pg-container {
+  display: flex; // set the context
+  flex: 1; // flex an equal space for the entire container sire.
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+
 #bg-video {
   z-index: -1;
   position: fixed;
@@ -134,11 +144,26 @@ body {
 }
 
 #name-small {
-  margin-top: 2%;
-  margin-left: 1%;
+  margin-top: 0;
   margin-bottom: 0;
   align-self: flex-start;
   @include name-font-smaller;
+}
+
+#category-title {
+  text-decoration: underline;
+}
+
+#image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-inline-end: 1rem;
+}
+
+#img {
+  width: 100%;
+  border: 1px solid black;
 }
 
 #info {

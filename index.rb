@@ -50,6 +50,30 @@ class Index < Roda
     r.on 'procgen' do
       @name = 'Procedural Generation'
       @title = 'Procedural Generation'
+      @links = {
+        Crystal_Polygons: {
+          title: 'Polygons',
+          items: [
+            '/polygons/polygons_2.png',
+            '/polygons/polygons_5.png',
+            '/polygons/polygons_6.png',
+            '/polygons/polygons_9.png',
+            '/polygons/tile_1.png',
+            '/polygons/tile_2.png',
+          ],
+          date: '01/02/2019',
+        },
+        Audio_Shop: {
+          title: 'Audio Based Glitching',
+          items: [
+            '/glitch/pompidou-glitch-overdrive.jpg',
+            '/glitch/pompidou-glitch-pitch.jpg',
+            '/glitch/pompidou.jpg',
+            '/glitch/sun-stars-glitch.jpg',
+          ],
+          date: '18/05/2016',
+        },
+      }
       render 'procedural_generation'
     end
 

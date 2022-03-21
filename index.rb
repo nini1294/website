@@ -23,7 +23,7 @@ class Index < Roda
         GitHub: 'https://github.com/nini1294'
       }
       @projects = {
-        Procedural_Generation: '/procedural',
+        Procedural_Generation: '/procgen',
         MyNeta_API: '/my_neta/',
         CarML: 'https://github.com/ece4813-movie-recommendation/Movie-Recommendation-Project',
 				Smartmirror: '/smartmirror'

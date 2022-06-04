@@ -29,7 +29,7 @@ class Index < Roda
 				Smartmirror: '/smartmirror'
       }
       @name = 'Nishant Shah'
-      @info = 'I\'m a software developer at Oracle in Pleasanton, California.'
+      @info = ''
 			@partial = 'info'
       render 'index'
     end

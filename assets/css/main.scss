@@ -1,8 +1,8 @@
 $main-font: 'Roboto Condensed', sans-serif;
 
-$color-name: #6194ec;
-$color-secondary: #c6d7ff;
-$color-links: #8af1f4;
+$color-name: #ffffff;
+$color-secondary: #94a3b8;
+$color-links: #67e8f9;
 $color-hover: red;
 $text-color: #A4D4B4;
 
@@ -188,3 +188,7 @@ body {
   color: $color-links;
   @include link-font;
 }
+
+#link { transition: 0.2s ease; display: inline-block; }
+
+#name, #info, #link { text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85); }
